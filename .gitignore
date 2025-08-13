@@ -1,0 +1,3 @@
+*.slurm
+*.ipynb
+.DS_Store

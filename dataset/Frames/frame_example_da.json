@@ -1,0 +1,297 @@
+{
+  "example_dialogs": [
+    {
+      "turns": [
+        {
+          "speaker": "user",
+          "utterance": "Hi I'd like to go to Caprica from Busan, between Sunday August 21, 2016 and Wednesday August 31, 2016",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": "Caprica"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "or_city",
+                "value": "Busan"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "str_date",
+                "value": "Sunday August 21, 2016"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "end_date",
+                "value": "Wednesday August 31, 2016"
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "And what would be your maximum budget for this trip?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "budget",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "Actually it's unlimited for this trip",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "budget",
+                "value": "no"
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "How many adults and how many children will be making this trip?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "n_adult",
+                "value": ""
+              },
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "n_children",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "2 adults",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "n_adults",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "I have no trips to Caprica from Busan.  I do have a trip to Mannheim, Germany, one to Kingston , Canada, and another to Toronto Canada.  Would you like to select alternate dates or an alternate travel destination?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "nooffer",
+                "domain": "travel",
+                "slot": "",
+                "value": ""
+              },
+              {
+                "intent": "recommend",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": "Mannheim, Germany"
+              },
+              {
+                "intent": "recommend",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": "Kingston , Canada"
+              },
+              {
+                "intent": "recommend",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": "Toronto Canada"
+              },
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "str_date",
+                "value": ""
+              },
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "Do you have anything for San Antonio as a destination?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "dst_city",
+                "value": "San Antonio"
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "Yes, I do.  I have one for 8445.37 USD.  Would you like to book this package?  The guest rating is 7.15/10 and there is free parking and free wifi.  Leaving Sunday, August 21st at 11:00 a.m. and returning Sunday, August 28th at 1:00 a.m.",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "count",
+                "value": "1"
+              },
+              {
+                "intent": "offerbook",
+                "domain": "travel",
+                "slot": "",
+                "value": ""
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "price",
+                "value": "8445.37"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "gst_rating",
+                "value": "7.15/10"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "parking",
+                "value": "True"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "wifi",
+                "value": "True"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "str_date",
+                "value": "Sunday, August 21st"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "dep_time_or",
+                "value": "11:00 a.m"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "end_date",
+                "value": "Sunday , August 28th"
+              },
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "arr_time_or",
+                "value": "1:00 a.m."
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "Is breakfast included?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "request",
+                "domain": "travel",
+                "slot": "breakfast",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "Yes, it is.",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "inform",
+                "domain": "travel",
+                "slot": "breakfast",
+                "value": "True"
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "That sounds great. 1:00 am return on Sunday August 28th is very early in the morning... ",
+          "dialogue_acts": {
+            "dialogue_acts": []
+          }
+        },
+        {
+          "speaker": "system",
+          "utterance": "Would you like to book this package?",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "offerbook",
+                "domain": "travel",
+                "slot": "",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "user",
+          "utterance": "Yes I would. Thanks for your help.",
+          "dialogue_acts": {
+            "dialogue_acts": [
+              {
+                "intent": "book",
+                "domain": "travel",
+                "slot": "",
+                "value": ""
+              },
+              {
+                "intent": "thank",
+                "domain": "general",
+                "slot": "",
+                "value": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

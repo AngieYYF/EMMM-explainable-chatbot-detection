@@ -1,0 +1,228 @@
+{"slots": {
+            "dst_city": {
+              "description": "destination city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "or_city": {
+              "description": "departure city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "str_date": {
+              "description": "start date",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "n_adults": {
+              "description": "number of adults",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "budget": {
+              "description": "budget for the trip",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "end_date": {
+              "description": "end date",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "flex": {
+              "description": "flexibility",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "duration": {
+              "description": "days",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "id": {
+              "description": "unique identifier",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "price": {
+              "description": "price",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "max_duration": {
+              "description": "Maximum number of days",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "amenities": {
+              "description": "amenities available in the accommodation",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "vicinity": {
+              "description": "vicinity of the accommodation",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "name": {
+              "description": "hotel or accommodation",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "category": {
+              "description": "star rating of the accommodation",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "wifi": {
+              "description": "WiFi availability",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "action": {
+              "description": " action (e.g., booking, searching, canceling)",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "write": {
+              "description": "user input text related to writing",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "dep_time_or": {
+              "description": "departure time from the orginal city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "n_children": {
+              "description": "number of children",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "gst_rating": {
+              "description": "guest rating of the accommodation",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "parking": {
+              "description": "parking availability",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "arr_time_or": {
+              "description": "Arrival time at the origin city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "breakfast": {
+              "description": "breakfast availability",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "count": {
+              "description": "number of different vacation packages",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "seat": {
+              "description": "seat preference for flights",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "count_name": {
+              "description": "number of different hotels",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "count_dst_city": {
+              "description": "number of destination cities",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "arr_time_dst": {
+              "description": "arrival time at the destination city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "dep_time_dst": {
+              "description": "departure time from destination city",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "gym": {
+              "description": "gym availability",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "spa": {
+              "description": "spa availablility",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "downtown": {
+              "description": "whether location is downtown",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "min_duration": {
+              "description": "minimum duration of stay",
+              "is_categorical": false,
+              "possible_values": []
+            },
+            "airport": {
+              "description": "whether proximity to an airport",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "beach": {
+              "description": "whether proximity to a beach",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "museum": {
+              "description": "whether proximity to a museum",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "theatre": {
+              "description": "whether proximity to a theatre",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "park": {
+              "description": "whether proximity to a park",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "market": {
+              "description": "whether proximity to a market",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "shopping": {
+              "description": "whether proximity to a shopping area",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "university": {
+              "description": "whether proximity to a university",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "mall": {
+              "description": "whether proximity to a mall",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "palace": {
+              "description": "whether proximity to a palace",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            },
+            "cathedral": {
+              "description": "whether proximity to a cathedral",
+              "is_categorical": true,
+              "possible_values": [true, false]
+            }
+          }
+        }       

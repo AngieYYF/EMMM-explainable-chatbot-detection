@@ -1,0 +1,803 @@
+{
+  "domains": {
+    "attraction": {
+      "description": "find an attraction",
+      "slots": {
+        "area": {
+          "description": "area to search for attractions",
+          "is_categorical": true,
+          "possible_values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west"
+          ]
+        },
+        "name": {
+          "description": "name of the attraction",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "type": {
+          "description": "type of the attraction",
+          "is_categorical": true,
+          "possible_values": [
+            "architecture",
+            "boat",
+            "cinema",
+            "college",
+            "concerthall",
+            "entertainment",
+            "museum",
+            "multiple sports",
+            "nightclub",
+            "park",
+            "swimmingpool",
+            "theatre"
+          ]
+        },
+        "entrance fee": {
+          "description": "how much is the entrance fee",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "open hours": {
+          "description": "open hours of the attraction",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "address": {
+          "description": "address of the attraction",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "phone": {
+          "description": "phone number of the attraction",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "postcode": {
+          "description": "postcode of the attraction",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "choice": {
+          "description": "number of attractions that meet the requirement",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "hotel": {
+      "description": "find and book a hotel",
+      "slots": {
+        "internet": {
+          "description": "whether the hotel has internet",
+          "is_categorical": true,
+          "possible_values": [
+            "free",
+            "no",
+            "yes",
+            "dontcare"
+          ]
+        },
+        "parking": {
+          "description": "whether the hotel has parking",
+          "is_categorical": true,
+          "possible_values": [
+            "free",
+            "no",
+            "yes",
+            "dontcare"
+          ]
+        },
+        "area": {
+          "description": "area or place of the hotel",
+          "is_categorical": true,
+          "possible_values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west",
+            "dontcare"
+          ]
+        },
+        "stars": {
+          "description": "star rating of the hotel",
+          "is_categorical": true,
+          "possible_values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "dontcare"
+          ]
+        },
+        "price range": {
+          "description": "price budget of the hotel",
+          "is_categorical": true,
+          "possible_values": [
+            "expensive",
+            "cheap",
+            "moderate",
+            "dontcare"
+          ]
+        },
+        "type": {
+          "description": "what is the type of the hotel",
+          "is_categorical": false,
+          "possible_values": [
+            "guesthouse",
+            "hotel",
+            "dontcare"
+          ]
+        },
+        "name": {
+          "description": "name of the hotel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book people": {
+          "description": "number of people for the hotel booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book stay": {
+          "description": "length of stay at the hotel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book day": {
+          "description": "day of the hotel booking",
+          "is_categorical": true,
+          "possible_values": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ]
+        },
+        "phone": {
+          "description": "phone number of the hotel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "postcode": {
+          "description": "postcode of the hotel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "address": {
+          "description": "address of the hotel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "ref": {
+          "description": "reference number of the hotel booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "choice": {
+          "description": "number of hotels that meet the requirement",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "taxi": {
+      "description": "rent taxi to travel",
+      "slots": {
+        "destination": {
+          "description": "destination of taxi",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "departure": {
+          "description": "departure location of taxi",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "leave at": {
+          "description": "leaving time of taxi",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "arrive by": {
+          "description": "arrival time of taxi",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "phone": {
+          "description": "phone number of the taxi",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "type": {
+          "description": "car type of the taxi",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "restaurant": {
+      "description": "find and book a restaurant",
+      "slots": {
+        "price range": {
+          "description": "price budget for the restaurant",
+          "is_categorical": true,
+          "possible_values": [
+            "cheap",
+            "expensive",
+            "moderate"
+          ]
+        },
+        "area": {
+          "description": "area or place of the restaurant",
+          "is_categorical": true,
+          "possible_values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west"
+          ]
+        },
+        "food": {
+          "description": "the cuisine of the restaurant",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "name": {
+          "description": "name of the restaurant",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "address": {
+          "description": "address of the restaurant",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "postcode": {
+          "description": "postcode of the restaurant",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "phone": {
+          "description": "phone number of the restaurant",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book people": {
+          "description": "number of people for the restaurant booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book time": {
+          "description": "time of the restaurant booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book day": {
+          "description": "day of the restaurant booking",
+          "is_categorical": true,
+          "possible_values": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ]
+        },
+        "ref": {
+          "description": "reference number of the restaurant booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "choice": {
+          "description": "number of restaurants that meet the requirement",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "train": {
+      "description": "find a train to travel",
+      "slots": {
+        "destination": {
+          "description": "destination of the train",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "arrive by": {
+          "description": "arrival time of the train",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "departure": {
+          "description": "departure location of the train",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "leave at": {
+          "description": "leaving time for the train",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "duration": {
+          "description": "duration of the travel",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "book people": {
+          "description": "number of people booking for train",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "day": {
+          "description": "day of the train",
+          "is_categorical": true,
+          "possible_values": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ]
+        },
+        "ref": {
+          "description": "reference number of the train booking",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "price": {
+          "description": "price of the train ticket",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "train id": {
+          "description": "id of the train",
+          "is_categorical": false
+        },
+        "choice": {
+          "description": "number of trains that meet the requirement",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "police": {
+      "description": "find a police station for help",
+      "slots": {
+        "name": {
+          "description": "name of the police station",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "address": {
+          "description": "address of the police station",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "postcode": {
+          "description": "postcode of the police station",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "phone": {
+          "description": "phone number of the police station",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "hospital": {
+      "description": "find a hospital for help",
+      "slots": {
+        "department": {
+          "description": "specific department of the hospital",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "address": {
+          "description": "address of the hospital",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "phone": {
+          "description": "phone number of the hospital",
+          "is_categorical": false,
+          "possible_values": []
+        },
+        "postcode": {
+          "description": "postcode of the hospital",
+          "is_categorical": false,
+          "possible_values": []
+        }
+      }
+    },
+    "general": {
+      "description": "general domain without slots",
+      "slots": {}
+    }
+  },
+  "intents": {
+    "inform": {
+      "description": "inform the value of a slot"
+    },
+    "request": {
+      "description": "ask for the value of a slot"
+    },
+    "nobook": {
+      "description": "inform the user that the booking is failed"
+    },
+    "reqmore": {
+      "description": "ask the user for more instructions"
+    },
+    "book": {
+      "description": "book something for the user"
+    },
+    "bye": {
+      "description": "say goodbye to the user and end the conversation"
+    },
+    "thank": {
+      "description": "thanks for the help"
+    },
+    "welcome": {
+      "description": "you're welcome"
+    },
+    "greet": {
+      "description": "express greeting"
+    },
+    "recommend": {
+      "description": "recommend a choice to the user"
+    },
+    "select": {
+      "description": "provide several choices for the user"
+    },
+    "offerbook": {
+      "description": "ask the user if he or she needs booking"
+    },
+    "offerbooked": {
+      "description": "provide information about the booking"
+    },
+    "nooffer": {
+      "description": "inform the user that there is no result satisfies user requirements"
+    }
+  },
+  "state": {
+    "attraction": {
+      "type": "",
+      "name": "",
+      "area": ""
+    },
+    "hotel": {
+      "name": "",
+      "area": "",
+      "parking": "",
+      "price range": "",
+      "stars": "",
+      "internet": "",
+      "type": "",
+      "book stay": "",
+      "book day": "",
+      "book people": ""
+    },
+    "restaurant": {
+      "food": "",
+      "price range": "",
+      "name": "",
+      "area": "",
+      "book time": "",
+      "book day": "",
+      "book people": ""
+    },
+    "taxi": {
+      "leave at": "",
+      "destination": "",
+      "departure": "",
+      "arrive by": ""
+    },
+    "train": {
+      "leave at": "",
+      "destination": "",
+      "day": "",
+      "arrive by": "",
+      "departure": "",
+      "book people": ""
+    },
+    "hospital": {
+      "department": ""
+    }
+  },
+  "dialogue_acts": {
+    "categorical": [
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'hotel', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'restaurant', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'stars'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'day'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'hotel', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'restaurant', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'day'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'stars'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'stars'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'area'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'price range'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'day'}",
+      "{'user': True, 'system': False, 'intent': 'inform', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': True, 'system': False, 'intent': 'inform', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'type'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'book day'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'price range'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'stars'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'book day'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'price range'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'day'}"
+    ],
+    "non-categorical": [
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'open hours'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hospital', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'police', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'duration'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'price'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'train id'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'hotel', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'hotel', 'slot': 'book stay'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'hotel', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'restaurant', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'restaurant', 'slot': 'book time'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'restaurant', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'nobook', 'domain': 'train', 'slot': 'duration'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'food'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'arrive by'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'departure'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'destination'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'leave at'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': 'train id'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'hotel', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'hotel', 'slot': 'book stay'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'hotel', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'restaurant', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'restaurant', 'slot': 'book time'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'restaurant', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'arrive by'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'departure'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'destination'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'duration'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'leave at'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'price'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'ref'}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': 'train id'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'open hours'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'food'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': 'postcode'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'phone'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'type'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'address'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'food'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'arrive by'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'departure'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'destination'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'leave at'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'price'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': 'train id'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hospital', 'slot': 'department'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hospital', 'slot': 'phone'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hospital', 'slot': 'postcode'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'book people'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'book stay'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'type'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'police', 'slot': 'address'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'police', 'slot': 'name'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'police', 'slot': 'phone'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'book people'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'book time'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'food'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'arrive by'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'departure'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'destination'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': 'leave at'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'arrive by'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'book people'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'departure'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'destination'}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': 'leave at'}"
+    ],
+    "binary": [
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'attraction', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'hospital', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'hotel', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'restaurant', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'taxi', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'book', 'domain': 'train', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': False, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'attraction', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'restaurant', 'slot': 'choice'}",
+      "{'user': False, 'system': True, 'intent': 'nooffer', 'domain': 'train', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'offerbook', 'domain': 'train', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'attraction', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': False, 'system': True, 'intent': 'recommend', 'domain': 'restaurant', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'reqmore', 'domain': 'general', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'attraction', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'hospital', 'slot': 'department'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'book stay'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'book day'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'book time'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'name'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'taxi', 'slot': 'arrive by'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'taxi', 'slot': 'departure'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'taxi', 'slot': 'destination'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'taxi', 'slot': 'leave at'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'book people'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'day'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'departure'}",
+      "{'user': False, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'destination'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'attraction', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'restaurant', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'select', 'domain': 'train', 'slot': ''}",
+      "{'user': False, 'system': True, 'intent': 'welcome', 'domain': 'general', 'slot': ''}",
+      "{'user': True, 'system': False, 'intent': 'inform', 'domain': 'hospital', 'slot': ''}",
+      "{'user': True, 'system': False, 'intent': 'inform', 'domain': 'police', 'slot': ''}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'attraction', 'slot': 'address'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'attraction', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'attraction', 'slot': 'postcode'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hospital', 'slot': 'address'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hospital', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hospital', 'slot': 'postcode'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hotel', 'slot': 'address'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hotel', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hotel', 'slot': 'postcode'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'hotel', 'slot': 'ref'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'police', 'slot': 'address'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'police', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'police', 'slot': 'postcode'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'restaurant', 'slot': 'address'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'restaurant', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'restaurant', 'slot': 'postcode'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'restaurant', 'slot': 'ref'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'taxi', 'slot': 'phone'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'taxi', 'slot': 'type'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'train', 'slot': 'price'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'train', 'slot': 'ref'}",
+      "{'user': True, 'system': False, 'intent': 'request', 'domain': 'train', 'slot': 'train id'}",
+      "{'user': True, 'system': False, 'intent': 'thank', 'domain': 'general', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'bye', 'domain': 'general', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'greet', 'domain': 'general', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'attraction', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'hotel', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'restaurant', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'taxi', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'inform', 'domain': 'train', 'slot': ''}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'attraction', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'attraction', 'slot': 'entrance fee'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'attraction', 'slot': 'type'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'internet'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'parking'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'price range'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'stars'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'hotel', 'slot': 'type'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'area'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'food'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'restaurant', 'slot': 'price range'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'arrive by'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'duration'}",
+      "{'user': True, 'system': True, 'intent': 'request', 'domain': 'train', 'slot': 'leave at'}"
+    ]
+  }
+}

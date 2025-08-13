@@ -1,0 +1,327 @@
+{
+    "domains": {
+        "travel": {
+            "slots": {
+                "dst_city": {
+                    "description": "Destination city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "or_city": {
+                    "description": "Origin city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "str_date": {
+                    "description": "Start date for the trip",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "n_adults": {
+                    "description": "Number of adults",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "budget": {
+                    "description": "User's budget for the trip",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "end_date": {
+                    "description": "End date for the trip",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "flex": {
+                    "description": "Boolean indicating whether the dates are flexible",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "duration": {
+                    "description": "Number of days for the trip",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "id": {
+                    "description": "Unique identifier for the trip or package",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "price": {
+                    "description": "Price of the trip or package",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "max_duration": {
+                    "description": "Maximum number of days for the trip",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "amenities": {
+                    "description": "Boolean indicating amenities available in the accommodation",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "vicinity": {
+                    "description": "Boolean indicating vicinity of the accommodation",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "name": {
+                    "description": "Name of the hotel or accommodation",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "category": {
+                    "description": "Category or star rating of the accommodation",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "wifi": {
+                    "description": "Boolean indicating whether WiFi is available",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "dep_time_or": {
+                    "description": "Departure time from origin city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "n_children": {
+                    "description": "Number of children",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "gst_rating": {
+                    "description": "Guest rating of the accommodation",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "parking": {
+                    "description": "Boolean indicating whether parking is available",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "arr_time_or": {
+                    "description": "Arrival time at the origin city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "breakfast": {
+                    "description": "Boolean indicating whether breakfast is included",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "count": {
+                    "description": "Number of different vacation packages",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "seat": {
+                    "description": "Seat preference for flights",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "count_name": {
+                    "description": "Number of different hotels",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "count_dst_city": {
+                    "description": "Number of destination cities",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "arr_time_dst": {
+                    "description": "Arrival time at the destination city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "dep_time_dst": {
+                    "description": "Departure time from destination city",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "gym": {
+                    "description": "Boolean indicating whether a gym is available",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "spa": {
+                    "description": "Boolean indicating whether a spa is available",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "downtown": {
+                    "description": "Boolean indicating whether the location is downtown",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "min_duration": {
+                    "description": "Minimum duration of stay",
+                    "is_categorical": false,
+                    "possible_values": []
+                },
+                "airport": {
+                    "description": "Boolean indicating proximity to an airport",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "beach": {
+                    "description": "Boolean indicating proximity to a beach",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "museum": {
+                    "description": "Boolean indicating proximity to a museum",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "theatre": {
+                    "description": "Boolean indicating proximity to a theatre",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "park": {
+                    "description": "Boolean indicating proximity to a park",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "market": {
+                    "description": "Boolean indicating proximity to a market",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "shopping": {
+                    "description": "Boolean indicating proximity to a shopping area",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "university": {
+                    "description": "Boolean indicating proximity to a university",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "mall": {
+                    "description": "Boolean indicating proximity to a mall",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "palace": {
+                    "description": "Boolean indicating proximity to a palace",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                },
+                "cathedral": {
+                    "description": "Boolean indicating proximity to a cathedral",
+                    "is_categorical": true,
+                    "possible_values": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        }
+    },
+    "intents": {
+        "inform": {
+            "description": "inform the value of a slot"
+        },
+        "request": {
+            "description": "ask for the value of a slot"
+        },
+        "nobook": {
+            "description": "inform the user that the booking is failed"
+        },
+        "reqmore": {
+            "description": "ask for more instructions or information"
+        },
+        "book": {
+            "description": "book something for the user"
+        },
+        "bye": {
+            "description": "say goodbye to the user and end the conversation"
+        },
+        "thank": {
+            "description": "thanks for the help"
+        },
+        "welcome": {
+            "description": "you're welcome"
+        },
+        "greet": {
+            "description": "express greeting"
+        },
+        "recommend": {
+            "description": "recommend a choice to the user"
+        },
+        "select": {
+            "description": "provide several choices for the user"
+        },
+        "offerbook": {
+            "description": "ask the user if he or she needs booking"
+        },
+        "offerbooked": {
+            "description": "provide information about the booking"
+        },
+        "nooffer": {
+            "description": "inform the user that there is no result satisfies user requirements"
+        }
+    }
+}
