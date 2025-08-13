@@ -11,8 +11,8 @@
 ## Datasets
 Datasets are preprocessed, containing the dialogues and extracted dialogue acts. 
 
-### Frames
-- Frames dataset construction prompts and pipeline can be found in [E2E_generation_Frame.py](LLM/E2E_generation_Frame.py)
+### Frames (Synthetic)
+- Frames (Synthetic) dataset construction prompts and pipeline can be found in [E2E_generation_Frame.py](LLM/E2E_generation_Frame.py)
 - Datasets include:
     - Bona Fide (original Frames dataset): [Frames paper](https://aclanthology.org/W17-5526/), [file](dataset/Frames/frames_bona_fide.pkl)
     - End-to-End Conversation (synthetic dataset generated): [file](dataset/Frames/frames_e2e.pkl)
@@ -26,7 +26,7 @@ Datasets are preprocessed, containing the dialogues and extracted dialogue acts.
 |                            | *dia*             | The dialogue itself, either bona fide or synthetic, with sensitive information masked.                                                      |
 |                            | *dialogue_act*             | The dialogue acts of each utterance within the dialogue.                                                     |
 |                            | *dialogue_act_info_removed*             | The dialogue acts of each utterance within the dialogue, with sensitive information masked.                                                     |
-| **Bona Fide**               | *goal_outcome*        | The  user goals and outcomes with format: "goal_1 \<sep\> goal_2 \<sep\> ... \<sep\> goal_n \<outcome\> outcome_1 \<sep\> outcome_2 \<sep\> ... \<sep\> outcome_n"     
+| **Bona Fide**               | *goal_outcome*        | The  user goals and outcomes with format: "goal_1 \<sep\> goal_2 \<sep\> ... \<sep\> goal_n \<outcome\> outcome_1 \<sep\> outcome_2 \<sep\> ... \<sep\> outcome_n"     |
 
 ### SPADE
 - The **SPADE** dataset was downloaded from [here](https://huggingface.co/datasets/AngieYYF/SPADE-customer-service-dialogue), with dataset construction frameworks described in their [paper](https://aclanthology.org/2025.llmsec-1.11/).
