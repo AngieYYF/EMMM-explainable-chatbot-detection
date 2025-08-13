@@ -2,7 +2,7 @@
 [**Paper**]() | [**Datasets**](#datasets) | [**EMMM Framework**](#emmm-framework)
 
 ## Introduction
-**EMMM** is an explainable LLM chatbot detection framework, targetting MGT detection and interpretability to diverse stakeholders in online conversational settings. This repository contains:
+**EMMM** is an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in online conversational settings. This repository contains:
 - Implementation of our proposed EMMM framework.
 - Scripts to train, use, and evaluate a model of the EMMM framework.
 - Customer service line synthetic user dialogues.
