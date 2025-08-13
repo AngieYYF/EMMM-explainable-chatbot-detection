@@ -1,4 +1,4 @@
-# EMMM, Explain Me My Model! Explainable Multi-Dimension Multi-Level Multi-Strategy Chatbot Detection
+# EMMM, Explain Me My Model!
 [**Paper**]() | [**Datasets**](#datasets) | [**EMMM Framework**](#emmm-framework)
 
 ## Introduction
