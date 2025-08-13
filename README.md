@@ -9,7 +9,7 @@
 
 
 ## Datasets
-Datasets are preprocessed, containing original dialogue, dialogue with sensitive information masked, and extracted dialogue acts. 
+Datasets are preprocessed, containing the dialogues and extracted dialogue acts. 
 
 ### Frames
 - Frames dataset construction prompts and pipeline can be found in [E2E_generation_Frame.py](LLM/E2E_generation_Frame.py)
