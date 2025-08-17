@@ -1,5 +1,7 @@
-# EMMM, Explain Me My Model!
+# 🤔EMMM, Explain Me My Model!
 [**Paper**]() | [**Datasets**](#datasets) | [**EMMM Framework**](#emmm-framework)
+
+![alt text](Plots/framework.png)
 
 ## Introduction
 **EMMM** is an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in online conversational settings. This repository contains:
