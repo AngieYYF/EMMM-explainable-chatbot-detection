@@ -25,17 +25,17 @@ def main():
                             type=str, default = 'mwoz')
         parser.add_argument("-turn_lv_utt_model", help="Backbone model for turn level utterance based detection model.",
                             choices = backbone_models, 
-                            type=str, default=backbone_models[0])
+                            type=str, default=backbone_models[2])
         parser.add_argument("-utt_expl_method", help="Explanation extraction method for utterance.",
                             choices = [ 'stii', 'ig', 'fs', 'none'], 
-                            type=str, default="ig")
+                            type=str, default="fs")
         parser.add_argument("-interaction_order", help="Explanation's order of interaction.",
                             type=int, default="1")
         parser.add_argument("-feature_match_model", help="Location to save/load the feature matching model",
                             type=str)
         parser.add_argument("-agg_method", help="Local explanation aggregation metric",
                             choices = ['lor', 'lsr', 'fwlor', 'fwlsr', 'agg_o', 'agg_s'],
-                            type=str)
+                            type=str, default='fwlor')
         parser.add_argument("-save_dir", help="Location to save the artifacts (model and explanations).",
                             type=str)
         parser.add_argument("-max_n_gram", help="n-grams for phrase extraction",

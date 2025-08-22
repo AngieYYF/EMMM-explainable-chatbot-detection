@@ -28,19 +28,19 @@ def main():
                             type=str, default = 'mwoz')
         parser.add_argument("-use_da_value", help="Whether the dialogue act value are used during detection and explanation.", 
                             choices = ['True', 'False'], 
-                            type=str, default = 'True')
+                            type=str, default = 'False')
         parser.add_argument("-use_da_turn", help="Whether to use entire turn of DA or just user's.", 
                             choices = ['True', 'False'], 
-                            type=str, default = 'True')
+                            type=str, default = 'False')
         parser.add_argument("-da_expl_method", help="Explanation extraction method for dialogue act.",
                             choices = [ 'stii', 'ig', 'fs', 'none'], 
-                            type=str, default="ig")
+                            type=str, default="fs")
         parser.add_argument("-utt_expl_method", help="Explanation extraction method for utterance.",
                             choices = [ 'stii', 'ig', 'fs', 'none'], 
-                            type=str, default="ig")
+                            type=str, default="fs")
         parser.add_argument("-dia_expl_method", help="Explanation extraction method for dialogue.",
                             choices = [ 'stii', 'ig', 'fs', 'none'], 
-                            type=str, default="fs")
+                            type=str, default="none")
         parser.add_argument("-interaction_order", help="Explanation's order of interaction.",
                             type=int, default="1")
         parser.add_argument("-da_expl_k", help="Maximum number of dialogue act explanations used per turn for aggregation into inputs for dialogue level detection.",
@@ -53,18 +53,18 @@ def main():
                             type=float, default="0")
         parser.add_argument("-turn_lv_da_model", help="Backbone model for turn level dialogue acts based detection model.",
                             choices = backbone_models, 
-                            type=str, default=backbone_models[0])
+                            type=str, default=backbone_models[2])
         parser.add_argument("-turn_lv_utt_model", help="Backbone model for turn level utterance based detection model.",
                             choices = backbone_models, 
-                            type=str, default=backbone_models[0])
+                            type=str, default=backbone_models[2])
         parser.add_argument("-dia_lv_model", help="Backbone model for dialogue level detection model.",
                             choices = backbone_models+['single-pretrained', 'late-fusion', 'late-fusion-separate', 'late-fusion-separate-pretrained'], 
-                            type=str, default='late-fusion')
+                            type=str, default='late-fusion-separate-pretrained')
         parser.add_argument("-dia_lv_suffix", help="Suffix for dialogue level model.",
                             type=str, default='')
         parser.add_argument("-dia_lv_fusion_method", help="Fusion method for DA and utterance.",
                             choices = ['concat', 'max', 'average'], 
-                            type=str, default='concat')
+                            type=str, default='average')
         parser.add_argument("-random_explanation", help="Whether to extract random explanations, else top important explanations.",
                             choices = ["True", "False"],
                             type=str, default="False")
