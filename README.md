@@ -20,8 +20,7 @@
 In this work, we introduce **EMMM**, an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in **online conversational settings**. Our method balances latency, accuracy, and non-expert-oriented interpretability.
 
 ## Key Insights
-- **EMMM is Dialogue-Aware.** EMMM leverages conversation specific features to deliver multi-dimension, multi-level, and multi-strategy explanations. Grounded in speech act theory, EMMM models dialogue structure and
-intent to enhance interpretability and support both online and offline chatbot detection.
+- **EMMM is Dialogue-Aware.** EMMM leverages conversation specific features to deliver multi-dimension, multi-level, and multi-strategy explanations. Grounded in speech act theory, EMMM models dialogue structure and intent to enhance interpretability and support both online and offline chatbot detection.
 
 - **EMMM is Efficient.** EMMM produces explanation reports online in under 1 second by combining a sequential selector–predictor pipeline with offline preprocessing, achieving the time efficiency required for deployment in real-world service platforms.
 
