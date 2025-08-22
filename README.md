@@ -7,7 +7,7 @@
   <a href="https://huggingface.co/datasets/AngieYYF/Frames-synthetic-customer-service-dialogue">
     <img src="https://img.shields.io/badge/🤗-HuggingFace:Datasets-blue.svg" alt="HuggingFace Dataset">
   </a> 
-  <a href="https://huggingface.co/datasets/AngieYYF/Frames-synthetic-customer-service-dialogue">
+  <a href="https://huggingface.co/collections/AngieYYF/emmm-explain-me-my-model-68a7efd0e25d4aadcf0b98ab">
     <img src="https://img.shields.io/badge/🤗-HuggingFace:Models-blue.svg" alt="HuggingFace Model">
   </a> 
   <img src="https://img.shields.io/badge/made%20with-Python-blue.svg" alt="Made with Python">
@@ -17,10 +17,11 @@
 
 ---
 
-In this work, we introduce **EMMM**, an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in **online conversational settings**. Our method balances latency,accuracy, and non-expert-oriented interpretability.
+In this work, we introduce **EMMM**, an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in **online conversational settings**. Our method balances latency, accuracy, and non-expert-oriented interpretability.
 
 ## Key Insights
-- **EMMM is Dialogue-Aware.** EMMM leverages conversation specific features to deliver multi-dimension, multi-level, and multi-strategy explanations. Grounded in speech act theory, EMMM supports both online and offline chatbot detection.
+- **EMMM is Dialogue-Aware.** EMMM leverages conversation specific features to deliver multi-dimension, multi-level, and multi-strategy explanations. Grounded in speech act theory, EMMM models dialogue structure and
+intent to enhance interpretability and support both online and offline chatbot detection.
 
 - **EMMM is Efficient.** EMMM produces explanation reports online in under 1 second by combining a sequential selector–predictor pipeline with offline preprocessing, achieving the time efficiency required for deployment in real-world service platforms.
 
@@ -50,14 +51,10 @@ Spade_e2e = load_dataset("AngieYYF/SPADE-customer-service-dialogue", "end_to_end
 Below is a dataset overview to help you quickly understand our datasets. 
 
 ### Synthetic-Frames
-- Synthetic-Frames dataset is constructed using prompts and our [pipeline](https://github.com/AngieYYF/SPADE-customer-service-dialogue).
-<!-- can be found in [E2E_generation_Frame.py](LLM/E2E_generation_Frame.py). -->
-- Datasets are available on [Hugging Face](https://huggingface.co/datasets/AngieYYF/Frames-synthetic-customer-service-dialogue) with [Bona fide](dataset/Frames/frames_bona_fide.pkl) and [End-to-End Conversation](dataset/Frames/frames_e2e.pkl) splites labeled with corresponding annotations.
-<!-- - Datasets include:
-    - Bona Fide (original Frames dataset): [Frames paper](https://aclanthology.org/W17-5526/), [file](dataset/Frames/frames_bona_fide.pkl)
-    - End-to-End Conversation (synthetic dataset generated): [file](dataset/Frames/frames_e2e.pkl) -->
-<!-- - We splite train/val/test dialogues based on dia_no, recorded [here](dataset/Frames/dataset_splits.pkl). -->
-- The datasets are of pkl file format and contain the following columns:
+- Synthetic-Frames dataset is constructed using [prompts and pipeline](LLM/E2E_generation_Frame.py) adapted from SPADE.
+- Datasets are available on [Hugging Face](https://huggingface.co/datasets/AngieYYF/Frames-synthetic-customer-service-dialogue) with [Bona fide](dataset/Frames/frames_bona_fide.pkl) and [End-to-End Conversation](dataset/Frames/frames_e2e.pkl) splits annotated with class labels.
+- train/val/test splits of dialogues are based on dia_no, recorded [here](dataset/Frames/dataset_splits.pkl).
+- The datasets (stored [here](dataset/Frames)) are of pkl file format and contain the following columns:
 
 | Dataset                    | Column            | Description                                                                                              |
 |----------------------------|-------------------|----------------------------------------------------------------------------------------------------------|
@@ -137,7 +134,7 @@ If you use the code, datasets or pre-trained models in your work, please cite th
 @misc{yuan2025emmm,
       title={EMMM, Explain Me My Model! Explainable Machine Generated Text Detection in Dialogues}, 
       author={Angela Yifei Yuan and Haoyi Li and Soyeon Caren Han and Christopher Leckie},
-      year={2025},}
+      year={2025}}
 ```
 
 ## Acknowledgements
