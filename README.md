@@ -17,7 +17,7 @@
 
 ---
 
-In this work, we introduce **EMMM**, an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in **online conversational settings**. Our method balances latency, accuracy, and non-expert-oriented interpretability.
+In this work, we introduce **EMMM**, an explainable LLM chatbot detection framework, targetting MGT detection and its interpretability to diverse stakeholders in **online conversational settings**. Our method balances latency, accuracy, and non-expert-oriented interpretability. This framework can be used in dialogue systems with non-expert users, such as in emergency calls and customer service lines.
 
 ## Key Insights
 - **EMMM is Dialogue-Aware.** EMMM leverages conversation specific features to deliver multi-dimension, multi-level, and multi-strategy explanations. Grounded in speech act theory, EMMM models dialogue structure and intent to enhance interpretability and support both online and offline chatbot detection.
@@ -122,6 +122,10 @@ python3 experiments/demo.py \
     -utterances "user: Hi, I'm looking for a vacation package from Calgary to St. Louis from August 17 to August 31 for one person. Any options?" "user: Can you tell me more about the locations of these hotels in relation to local attractions?" "user: The 5-star Lunar Hotel sounds nice. Can I get the package with economy flights then?"\
     -sys_utterances "system: Hi! How can I help you?" "system: I found two options for you. A 3-star hotel with business class flights for \$1858 or a 5-star hotel with economy flights for \$1558, both include breakfast and wifi. Which do you prefer?" "system: The 3-star Glorious Cloak Inn is near downtown, close to museums and theaters. The 5-star Lunar Hotel is also centrally located, near parks and shopping areas."
 ```
+
+5. The explanation for the output demonstration is provided below.
+
+![alt text](Plots/demo-explanation.png)
 
 ## EMMM Framework - Further Evaluation from Paper
 - Evaluate AOPC of DA-based semi-global aggregation: [framework_aopc.py](experiments/framework_aopc.py)
