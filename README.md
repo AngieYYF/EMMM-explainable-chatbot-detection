@@ -1,7 +1,7 @@
 <h1 align="center">🤔 EMMM, Explain Me My Model!</h1>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/">
+  <a href="https://arxiv.org/abs/2508.18715">
     <img src="https://img.shields.io/badge/arXiv-red.svg?logo=arxiv&style=flat" alt="arXiv">
   </a> 
   <a href="https://huggingface.co/datasets/AngieYYF/Frames-synthetic-customer-service-dialogue">
